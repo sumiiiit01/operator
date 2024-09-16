@@ -1,0 +1,153 @@
+
+
+
+1. What are the Conditional Operators in Java?
+
+
+Ans: They are used when a condition comprises more than one boolean expression. For instance, if we want to
+print a number only if it is greater than 2 and less than 5, then we will use conditional operators to combine the
+2 expressions. We have 3 types of conditional operators - logical-and, logical-or and ternary operator.
+
+Logical-and operator (&&)
+It is used when we want the condition to be true iff both the expressions are true.
+Syntax
+
+if(condition - 1 && condition - 2) {
+statement;
+}
+
+Logical-or operator (||)
+This operator is used when we are satisfied as long as any one of the boolean expressions is evaluated as true.
+Syntax
+
+if(condition - 1 || condition - 2) {
+statement;
+}
+
+Ternary operator (?:)
+It is a smaller version for the if-else statement. If the condition is true then the statement - 1 is executed else the
+statement - 2 is executed.
+Syntax
+condition ? statement - 1 : statement - 2;
+
+
+
+2. What are the types of operators based on the number of operands?
+
+Ans: There are three types of operators in java based on the number of operands. They are
+. Unary operator
+. Binary operator
+. Ternary operator
+
+
+3. What is the use of Switch case in Java programming?
+
+Ans: Switch statement
+The switch case in java is used to select one of many code blocks for execution.
+
+Break keyword: As java reaches a break keyword, the control breaks out of the switch block. The execution of
+code stops on encountering this keyword, and the case testing inside the block ends as the match is found. A
+lot of execution time can be saved because it ignores the rest of the code's execution when there is a break.
+Default keyword: The keyword is used to specify the code executed when the expression does not match any
+test case.
+The switch case in Java works like an if-else ladder, i.e., multiple conditions can be checked at once. Switch is
+provided with an expression that can be a constant or literal expression that can be evaluated. The value of the
+expression is matched with each test case till a match is found. If there is no match, the default keyword, if
+specified- the associated code executes. Otherwise, the code specified for the matched test case is executed.
+
+
+For example, the code below uses the monthly number to calculate the month name:
+public class Main {
+public static void main(String[] args) {
+int month = 4;
+switch (month) {
+case 1:
+System.out.println("January");
+break;
+case 2:
+System.out.println("February");
+break;
+case 3:
+System.out.println("March");
+break;
+case 4:
+System.out.println("April");
+break;
+case 5:
+System.out.println("May");
+break;
+case 6:
+System.out.println("June");
+break;
+default: System.out.println("In next half");
+}
+}
+}
+
+Output:
+
+April
+
+
+4. What are the priority levels of arithmetic operation in Java?
+
+
+Ans: There are two priority levels of arithmetic operation in java. They are as follows@
+-> High priority * / %
+-> Low priority  + –
+
+
+5. What are the conditional Statements and use of conditional statements in Java?
+-> if to specify a block of code to be executed, if a specified condition is true
+-> else to specify a block of code to be executed, if the same condition is false
+->else if to specify a new condition to test, if the first condition is false
+-> switch to specify many alternative blocks of code to be executed
+
+
+6. What is the syntax of if else statement?
+
+if (condition1) {
+// block of code to be executed if condition1 is true
+} else if (condition2) {
+// block of code to be executed if the condition1 is false and condition2 is true
+} else {
+// block of code to be executed if the condition1 is false and condition2 is false
+}
+
+
+7. What are the 3 types of iterative statements in java?
+
+3 types of iterative statements in java
+->for loop
+-> while loop
+->do-while loop
+
+8. Difference between for loop and do while loop?
+
+For loop
+*)Statement(s) is executed once the condition is checked.
+*)it might be that statement(s) is executed zero times.
+*)for the single statement(s), brackets are not compulsory.
+*)initialisation may be outside or inside a condition box.
+*)for loop is entry controlled loop.
+
+Do while loop
+*)condition is checked after the statement(s) is executed.
+*)Statement(s) is at least one time executed.
+*)brackets are always compulsory.
+*)initialisation may be outside or inside the loop.
+*)do while is an exit controlled loop.
+
+
+9. Write a program to print numbers from 1 to 10.
+
+public class PrintNumbers
+{
+public static void main(String[] args)
+{
+for(int i=1; i<=10; i++)
+{
+System.out.println(i);
+}
+}
+}
